@@ -1,21 +1,3 @@
--- CREATE TABLE IF NOT EXISTS users (
---     id BIGINT AUTO_INCREMENT PRIMARY KEY,
---     email VARCHAR(255) NOT NULL UNIQUE,
---     password VARCHAR(255) NOT NULL,
---     role ENUM('MEMBER', 'ADMIN') NOT NULL
---     );
-
--- CREATE TABLE IF NOT EXISTS cards (
---     id BIGINT AUTO_INCREMENT PRIMARY KEY,
---     user_id BIGINT,
---     name VARCHAR(255) NOT NULL,
---     description TEXT,
---     color VARCHAR(7),
---     status ENUM('TO_DO', 'IN_PROGRESS', 'DONE') NOT NULL DEFAULT 'TO_DO',
---     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
---     FOREIGN KEY (user_id) REFERENCES users(id)
---     );
-
 DROP
 DATABASE IF EXISTS cards_db;
 CREATE
